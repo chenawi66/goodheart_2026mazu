@@ -588,8 +588,19 @@ section {
     max-height: 300px;
 }
 
+.footer-mazu-head {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 100px;
+    transform: rotate(-10deg);
+    opacity: 0.9;
+    z-index: 5;
+}
+
 .cta-content {
     flex: 1.5;
+    width: 100%;
 }
 
 .cta-content h3 {
@@ -655,16 +666,25 @@ section {
     .cta-box {
         grid-template-columns: 1fr;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        text-align: left;
     }
 
     .hero-actions {
-        justify-content: center;
+        justify-content: flex-start;
         display: flex;
+    }
+
+    .section-header {
+        text-align: left;
+    }
+
+    .section-header .divider {
+        margin-left: 0;
     }
 
     .timeline {
@@ -672,7 +692,29 @@ section {
     }
 
     .cta-box {
-        padding: 40px 20px;
+        padding: 40px 24px;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .cta-content h3 {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    .financial-note-footer {
+        text-align: left;
+        margin-top: 24px;
+        padding-top: 16px;
+    }
+
+    .footer-mazu-head {
+        display: none;
+        /* Hide to prevent overlapping with text on small screens */
+    }
+
+    .ack-text-center {
+        text-align: left;
     }
 
     .timeline::before {
