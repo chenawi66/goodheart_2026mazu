@@ -395,6 +395,34 @@ section {
     font-weight: bold;
 }
 
+/* Distribution Gallery */
+.distribution-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.dist-img-container {
+    position: relative;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dist-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.dist-img-container:hover img {
+    transform: scale(1.1);
+}
+
 /* Products Section */
 .product-grid {
     display: grid;
